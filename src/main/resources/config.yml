@@ -1,0 +1,10 @@
+# ChatRange configuration
+#
+# chat-range: how far (in blocks) a player's normal chat message can be seen.
+#   - Minimum: 0   -> 0 disables range limiting entirely. Chat becomes global
+#                     (every online player sees every message, like vanilla).
+#   - Maximum: 1000
+#   - Default: 100
+#
+# Values outside 0-1000 will automatically be clamped by the plugin.
+chat-range: 100
