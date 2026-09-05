@@ -25,3 +25,6 @@ permissions:
   chatrange.admin:
     description: Allows reloading the ChatRange config
     default: op
+  chatrange.seeall:
+    description: Allows staff to see chat messages regardless of distance
+    default: op
