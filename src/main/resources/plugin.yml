@@ -1,0 +1,27 @@
+name: ChatRange
+version: '${project.version}'
+main: com.yourname.chatrange.ChatRangePlugin
+api-version: '1.21'
+author: YourName
+description: Range-limited local chat, staff /msg spying, and a colored /broadcast command.
+
+commands:
+  broadcast:
+    description: Broadcast a message to every player on the server.
+    usage: /broadcast <message>
+    permission: chatrange.broadcast
+  chatrange:
+    description: Reload or check the ChatRange plugin's config.
+    usage: /chatrange reload
+    permission: chatrange.admin
+
+permissions:
+  chatrange.broadcast:
+    description: Allows use of /broadcast
+    default: op
+  chatrange.spy:
+    description: Allows staff to see everyone's private messages (/msg, /tell, /w) in their chat
+    default: op
+  chatrange.admin:
+    description: Allows reloading the ChatRange config
+    default: op
