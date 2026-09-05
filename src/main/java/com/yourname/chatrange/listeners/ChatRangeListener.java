@@ -49,6 +49,11 @@ public class ChatRangeListener implements Listener {
                 return false;
             }
 
+            if (viewer.hasPermission("chatrange.seeall")) {
+                // Staff with this permission see every chat message regardless of distance
+                return false;
+            }
+
             if (!viewer.getWorld().equals(senderLocation.getWorld())) {
                 return true; // different world = too far away
             }
